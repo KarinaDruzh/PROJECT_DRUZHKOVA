@@ -8,21 +8,25 @@
     <link rel="stylesheet" href="styles/style.css">
 </head>
 <body>
-    <header class="header">
-        <img class="header-logo" scr="IMAGES/Logo.svg" alt="Логотип">
-        <h1 class="header-title">Доставка цветов</h1>
+    <header class="header container">
+        <a class="header-logo-wrap" href="index.html">
+            <img class="header-logo" src="images/Logo.svg" alt="Логотип">
+            <h1 class="header-title">Доставка цветов</h1>
+        </a>
         <nav class="header-menu">
             <ul class="menu">
-                <li class="menu-item menu-home"><a class="menu-link" href="#">главная</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">корзины с цветами</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">контакты</a></li>
-                <li class="menu-item"><a class="menu-link" href="#">моя корзина</a></li>
+                <li class="menu-item menu-home"><a class="menu-link" href="#">Главная</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">Корзины с цветами</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">Контакты</a></li>
+                <li class="menu-item"><a class="menu-link" href="#">Моя корзина</a></li>
             </ul>
         </nav>
-        <a href="login.html">Вход</a>
-    
+        <div class="header-login-all">
+            <a class="header-login" href="login.html">Вход</a>
+            <a class="header-login" href="regisration.html">Регистрация</a>
+        </div>
     </header>
-    <main class="main">
+    <main class="main container">
         <section class="login-account">
             <form action="#">
                 <h1>Вход в личный кабинет</h1>
@@ -32,12 +36,21 @@
             </form>
         </section>
         <section class="banner">
-            <div class="banner">
-                <h2 class="banner-promotion">В продаже более 100 собранных букетов</h2>
-                <a class="banner-link" href="#">корзины с цветами</a>
-                <img class="banner-image" scr="images/360_F_496299347_ABPgLF1FrIsQgGZL6ZC58z4CBeJcjzcR.jpg" alt="Шапка сайта">
+            <div class="banner-left">
+                <h2 class="about">Что мы предлагаем?</h2>
+                <p>Многотысячный ассортимент на любой вкус, оперативную работу доставки, круглосуточную работу, 
+                    доставку и самых лучших курьеров!</p>
+                <p>
+                    7 дней в неделю и 365 дней в году мы дарим радость 
+                    вашим девушкам, мамам, сестрам, а также всем остальным любимым, добрым, 
+                    уважаемым и близким людям!
+                </p>
+            </div>
+            <div class="banner-right">
+                <img class="banner-image" src="images/flat-lay-beautiful-roses-arrangement-with-copy-space 2.jpg" alt="Шапка сайта">
             </div>
         </section>
+        <h2 class="banner-promotion">В продаже более 100 собранных букетов</h2>
         <section class="promotion-bouquets">
             <div class="promotion-bouquets">
                 <h2 class="promotion-item">Акции</h2>
@@ -46,20 +59,20 @@
                 <li class="bouquet">
                     <img class="bouquet-image" src="images/buket-4-315x315.jpg" alt="Букет1" width="350" height="350">
                     <h3 class="bouquet-name">Всё для тебя</h3>
-                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                     <span class="bouquet-price">2 000 Р</span>
+                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                 </li>
                 <li class="bouquet">
                     <img class="bouquet-image" src="images/buket-45-315x315.jpg" alt="букет2" width="350" height="350">
                     <h3 class="bouquet-name">Весна во всей красе</h3>
-                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                     <span class="bouquet-price">1 999 Р</span>
+                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                 </li>
                 <li class="bouquet">
                     <img class="bouquet-image" src="images/buket-karamel-315x315.jpg" alt="Букет3" width="350" height="350">
                     <h3 class="bouquet-name">Карамельный букет</h3>
-                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                     <span class="bouquet-price">2 499 Р</span>
+                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                 </li>
             </ul>
         </section>
@@ -71,20 +84,20 @@
                 <li class="bouquet">
                     <img class="bouquet-image" src="images/buket-iz-krasnyh-roz-rossiya-315x315.jpg" alt="Красные розы" width="350" height="350">
                     <h3 class="bouquet-name">Красные розы</h3>
-                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                     <span class="bouquet-price">5 000 Р</span>
+                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                 </li>
                 <li class="bouquet">
                     <img class="bouquet-image" src="images/buket-iz-kremovyh-roz-ekvador-350x350.jpg" alt="Кремовые розы" width="350" height="350">
                     <h3 class="bouquet-name">Кремовые розы</h3>
-                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                     <span class="bouquet-price">3 999 Р</span>
+                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                 </li>
                 <li class="bouquet">
                     <img class="bouquet-image" src="images/buket-krasnoe-serdtse-315x315.jpg" alt="бело-красные розы" width="350" height="350">
                     <h3 class="bouquet-name">Сочетание белых и красных роз</h3>
-                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                     <span class="bouquet-price">2 999 Р</span>
+                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                 </li>
             </ul>
         </section>
@@ -94,27 +107,27 @@
             </div>
             <ul class="type-box">
                 <li class="bouquet">
-                    <img class="bouquet-image" src="images/tsvety-v-korobke-balerina-315x315.jpg" alt="балерина" width="350" height="350">
+                    <img class="bouquet-image" src="images/tsvety-v-korobke-balerina-315x315.jpg" alt="балерина" width="315" height="315">
                     <h3 class="bouquet-name">Нежная корзина</h3>
-                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                     <span class="bouquet-price">1 500 Р</span>
+                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                 </li>
                 <li class="bouquet">
                     <img class="bouquet-image" src="images/tsvety-v-korobke-chuvstva-350x350.jpg" alt="тюльпаны" width="350" height="350">
                     <h3 class="bouquet-name">Кремовые тюльпаны</h3>
-                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                     <span class="bouquet-price">2 000 Р</span>
+                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                 </li>
                 <li class="bouquet">
                     <img class="bouquet-image" src="images/tsvety-v-korobke-kreativ-350x350.jpg" alt="Сочеатние" width="350" height="350">
                     <h3 class="bouquet-name">Идеальное сочетание</h3>
-                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                     <span class="bouquet-price">3 000 Р</span>
+                    <a class="bouquet-link" href="#">Добавить в корзину</a>
                 </li>
             </ul>
         </section>
     </main>
-    <footer class="footer">
+    <footer class="footer container">
         <p class="footer-name">Сайт создан Дружковой Кариной группа СТ-21</p>
         <ul class="footer-links">
         <li class="footer-link"><a href="#">Правовая оговорка</a></li>
