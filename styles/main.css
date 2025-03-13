@@ -1,0 +1,73 @@
+.banner{
+    display: flex;
+    gap: 52px;
+    padding: 10px;
+    text-align: justify;
+}
+.banner-right{
+    width: auto;
+}
+.bouquet{
+    width: 353px;
+    padding: 15px;
+
+    background-color: rgb(250, 237, 242);
+    color: black;
+    box-shadow: 1px 2px 20px 5px #d7d7d7;  
+}
+.bouquet-name{
+    margin-top: 15px;
+    margin-bottom: 15px;
+    font-size: 20px;
+    font-weight: bold;
+    text-align: center;
+}
+.bouquet-price{
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-style: italic;
+    margin-left: 30px;
+    text-align: center;
+}
+.bouquet-link{
+    display: block;
+    padding: 10px;
+    background-color: #956D84;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    text-align: center;
+}
+.type-promotion{
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.type-popular{
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.type-box{
+    margin: 0;
+    padding: 20px 0;
+    display: flex;
+    gap: 100px;
+    flex-wrap: wrap;
+    list-style-type: none;
+    justify-content: space-around;
+}
+.bouquet{
+    display: flex;
+    flex-direction: column;
+}
+.bouquet-link{
+    margin-top: auto;
+}
