@@ -5,7 +5,7 @@
     text-align: justify;
 }
 .banner-right{
-    width: auto;
+    width: 400px;
 }
 .bouquet{
     width: 353px;
@@ -70,4 +70,14 @@
 }
 .bouquet-link{
     margin-top: auto;
+}
+.bouquet-link{
+    transition: background-color 0.3s,
+    color 0.3s;
+}
+.bouquet-link:hover {
+    background-color: #865772;
+}
+.bouquet-link:active {
+    background-color: #956D84;
 }

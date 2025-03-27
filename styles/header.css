@@ -19,23 +19,24 @@
     text-decoration: none;
 }
 .header-login{
-    display: inline-block;
- padding: 10px;
- margin: 5px;
- background-color: #956D84;
- color: rgb(255, 255, 255);
- text-decoration: none;
+    display: inline-block; 
+    padding: 10px;
+    margin: 5px;
+    background-color: #956D84;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
 }
 .header-logo-wrap{
     display: flex;
     align-items: flex-start;
-    gap: 20px;
     color: #f33186;
     text-decoration: none;
+    flex-direction: column;
 }
 .header-title{
     text-decoration: none;
-    margin: 5;
+    margin-left: 100px;
+    margin-top: auto;
 }
 .header-menu{
     display: flex;
@@ -47,4 +48,44 @@
     justify-content: space-between;
     padding-top: 20px;
     padding-bottom: 20px;
+    align-items: center;
+}
+.footer-links{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-link{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.menu-link{
+    transition: background-color 0.3s,
+    color 0.3s;
+}
+.menu-link:hover {
+    background-color: #524f4f;
+}
+.menu-link:active {
+    background-color: #292828;
+}
+.header-login{
+    transition: background-color 0.3s,
+    color 0.3s;
+}
+.header-login:hover {
+    background-color: #865772;
+}
+.header-login:active {
+    background-color: #956D84;
 }
