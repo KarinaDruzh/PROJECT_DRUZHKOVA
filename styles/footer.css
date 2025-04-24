@@ -1,0 +1,32 @@
+.footer-links{
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+    display: flex;
+    flex-wrap: wrap;
+}
+.footer-link{
+    display: block;
+    padding: 10px;
+    margin: 5px;
+    background-color: #333333;
+    color: white;
+    text-decoration: none;
+}
+.footer{
+    display: flex;
+    justify-content: space-between;
+}
+.link-description {
+    margin-bottom: 15px; /*отступ сверху*/
+    color: #000000; /*цвет текста*/
+    text-align: center; /*выравнивание текста по центру*/
+    font-size: 16px; /*размер шрифта*/
+    position: absolute; /* позиционируется абсолютно*/
+    width: 500px; /*устанавливаем ширину для текста*/
+    background-color: #f79d9d; /*задаем фон*/
+    bottom: 59px;
+}
+.link-item{
+    position: relative;
+}

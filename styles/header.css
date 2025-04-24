@@ -50,25 +50,6 @@
     padding-bottom: 20px;
     align-items: center;
 }
-.footer-links{
-    margin: 0;
-    padding: 0;
-    list-style-type: none;
-    display: flex;
-    flex-wrap: wrap;
-}
-.footer-link{
-    display: block;
-    padding: 10px;
-    margin: 5px;
-    background-color: #333333;
-    color: white;
-    text-decoration: none;
-}
-.footer{
-    display: flex;
-    justify-content: space-between;
-}
 .menu-link{
     transition: background-color 0.3s,
     color 0.3s;
