@@ -28,3 +28,37 @@ document.addEventListener("DOMContentLoaded", () => {
 
     });
 });
+
+
+
+const bouquets = document.querySelector(".promotion-bouquets");
+if (bouquets){
+    const dataTitleBouquets = [
+        "Всё для тебя",
+        "Весна во всей красе",
+        "Карамельный букет",
+    ];
+    const BouquetsName = bouquets.querySelectorAll(".bouquet-name");
+    BouquetsName.forEach((item, index) => {
+        item.textContent = dataTitleBouquets[index];
+    }
+)};
+//объявляем переменную и сохраняем в неё кнопку для оставления заявки
+const requestButton = document.querySelector(".request-button");
+//объявляем переменную и сохраняем в неё модальное окно
+const modalApplication = document.querySelector(".applications");
+
+if (requestButton && modalApplication) {
+    requestButton.addEventListener("click", ()=> {
+        modalApplication.removeAttribute("hidden");
+    });
+}
+
+window.addEventListener("click", (event) => {
+    // проверяем, был ли клик на фоне модального окна
+        if (event.target === modalApplication) {
+    //если условие выполняется, добавляем атрибут hidden у модального окна modalApplication и модальное окно становится невидимым
+            modalApplication.setAttribute("hidden", true);
+        }
+    });
+    
