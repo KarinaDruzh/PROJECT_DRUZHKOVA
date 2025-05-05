@@ -61,4 +61,37 @@ window.addEventListener("click", (event) => {
             modalApplication.setAttribute("hidden", true);
         }
     });
+
     
+const headerMenu = document.querySelector('.header-menu');
+if (headerMenu){
+    const headerList = headerMenu.querySelector('.menu');
+    const menuData = {
+        link1: {
+            link: '#',
+            title: 'Главная',
+        },
+        link2: {
+            link: '#',
+            title: 'Корзины с цветами',
+        },
+        link3: {
+            link: '#',
+            title: 'Контакты',
+        },
+        link4: {
+            link: '#',
+            title: 'Моя корзина',
+        }
+    }
+    const createLink = (UrlLink, title) =>{
+        const link = 
+        `<li class="menu-item"><a href="${UrlLink}" class="menu-link">${title}</a></li>`;
+        return link;
+    }
+    for (const linkItem in menuData) {
+        const link = menuData[linkItem];
+        const linkIndex = createLink(link.UrlLink, link.title);
+        headerList.insertAdjacentHTML('beforeend', linkIndex);
+    }
+}
