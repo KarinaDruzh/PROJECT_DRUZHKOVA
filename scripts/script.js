@@ -95,3 +95,53 @@ if (headerMenu){
         headerList.insertAdjacentHTML('beforeend', linkIndex);
     }
 }
+
+
+const cardCon = document.querySelector(".job");
+if (cardCon) {
+    const cardList = cardCon.querySelector(".job-list");
+    //получаем данные с сервера
+    const apiUrl = "data.json";
+    //функция для создания карточки
+    const createCard = (
+        image,
+        iconAlt,
+        imageWight,
+        imageHeigt,
+        title,
+        description
+    ) => {
+        //шаблонные строки и подстановки
+        const card = 
+        `<li class="job-item"><img class="job-img" src="${image}" alt="${iconAlt}" width="${imageWight}" height="${imageHeigt}">
+        <h3 class="job-title">${title}</h3>
+        <p class="job-description">${description}</p>
+        </li> 
+        `;
+        return card;
+    };
+    fetch(apiUrl)
+    .then((Response)=> Response.json())
+    .then((data)=>{
+        console.log(data); //данные
+        console.log(typeof data);
+
+        data.forEach((item) =>{
+            const cardElement = createCard(
+                item.image,
+                item.iconAlt,
+                item.imageWight,
+                item.imageHeigt,
+                item.title,
+                item.description
+            );
+            cardList.insertAdjacentHTML("beforeend", cardElement);
+        });
+    })
+    .catch((error) => {
+        console.error("Ошибка при загрузке данных:", error);
+    });
+        
+    
+    
+}

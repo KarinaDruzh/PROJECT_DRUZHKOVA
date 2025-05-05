@@ -1,0 +1,28 @@
+[
+    {
+        "image": "images/florist.jpg",
+        "iconAlt": "Вакансия 1",
+        "imageWight": 323,
+        "imageHeigt": 352,
+        "title": "Требуется флорист",
+        "description": "Заработная плата от 30 000р."
+        
+
+    },
+    {
+        "image": "images/dopflorist.jpg",
+        "iconAlt": "Вакансия 2",
+        "imageWight": 323,
+        "imageHeigt": 352,
+        "title": "Требуется помощник флориста",
+        "description": "Заработная плата от 20 000р."
+    },
+    {
+        "image": "images/manager.jpg",
+        "iconAlt": "Вакансия 3",
+        "imageWight": 323,
+        "imageHeigt": 352,
+        "title": "Требуется менеджер",
+        "description": "Заработная плата от 40 000р."
+    }
+]
