@@ -4,6 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Доставка цветов</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css" />
     <link rel="stylesheet" href="styles/normalize.css">
     <link rel="stylesheet" href="styles/style.css">
 </head>
@@ -129,6 +130,55 @@
                 </li>
             </ul>
         </section>
+        <h2 class="reviews">Отзывы</h2>
+        <div class="swiper mySwiper">
+            <div class="swiper-wrapper">
+              <div class="swiper-slide">
+                <img src="images/flower1.jpg" class="swiper-slide-img" alt="Slide 1">
+                <p class="swiper-slide-text">"Заказывала букет для мамы на юбилей. <br>
+                    Цветы невероятно свежие, как будто только что с поля! <br>
+                    Аромат восхитительный! Доставили точно в назначенное время, <br>
+                    даже немного раньше, что было очень кстати. Мама была в восторге, и я тоже! <br>
+                    Спасибо за прекрасный сервис и красоту!"</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/flower2.jpg" class="swiper-slide-img" alt="Slide 2">
+                <p class="swiper-slide-text">"Хочу выразить благодарность флористам за такую красоту! <br>
+                    Заказывал букет для девушки. <br>
+                    Она его обожает, и он был просто безупречен! <br>
+                    Цветы свежие, бутоны плотные. Доставили очень быстро, <br>
+                    через час после заказа уже позвонили в дверь. <br>
+                    Сюрприз удался на славу! Обязательно буду заказывать еще."</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/flower3.jpg" class="swiper-slide-img" alt="Slide 3">
+                <p class="swiper-slide-text">"Заказала у вас корзину с фруктами и цветами для коллеги, которая заболела. <br>
+                    Корзина выглядит очень стильно и аппетитно, а цветы добавили ей особого шарма. <br>
+                    Доставили прямо в офис, буквально через несколько часов после оформления заказа. <br>
+                    Коллега была очень тронута и сразу почувствовала себя лучше! <br>
+                    Спасибо за оперативность и заботу!"</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/flower4.jpg" class="swiper-slide-img" alt="Slide 4">
+                <p class="swiper-slide-text">"Заказала цветы первый раз в этом магазине и осталась очень довольна! <br>
+                    Выбрала яркий и позитивный букет. <br>
+                    Цветы очень долго простояли, не завяли. <br> 
+                    Доставили очень быстро, курьер вежливый и приятный. <br>
+                    Теперь я ваш постоянный клиент!"</p>
+              </div>
+              <div class="swiper-slide">
+                <img src="images/flower5.jpg" class="swiper-slide-img" alt="Slide 5">
+                <p class="swiper-slide-text"> "Заказывал небольшой букет для жены на годовщину свадьбы. <br>
+                    Цветы просто огромные и шикарные, а аромат какой! <br>
+                    Жена была в полном восторге! <br>
+                    Доставили очень быстро, несмотря на то, <br> 
+                    что заказывал в самый пик праздничного дня. <br>
+                    Спасибо за то, что помогаете делать счастливыми близких людей!"</p>
+              </div>
+            </div>
+            <div class="swiper-button-next"></div>
+            <div class="swiper-button-prev"></div>
+          </div>
         <section class="job">
             <h2 class="job-title">Вакансии</h2>
             <ul class="job-list">
@@ -171,14 +221,16 @@
                 <h2 class="application-title">Оставьте заявку</h2>
                 <p class="application-text">Скидка 10% при сумме заказа от 1000р.</p>
             </div>
-            <form action="/" class="application-form">
-                <input class="application-input" type="text" placeholder="Имя">
-                <input class="application-input" type="tel" placeholder="Телефон">
-                <input class="application-input" type="email" placeholder="E-mail">
-                <button class="application-button">Отправить заявку</button>
+            <form action="/" class="application-form" id="formApplication">
+                <input class="application-input" type="text" placeholder="Имя" id="username">
+                <input class="application-input" type="tel" placeholder="Телефон" id="tel">
+                <input class="application-input" type="email" placeholder="E-mail" id="email">
+                <button class="application-button" type="submit">Отправить заявку</button>
             </form>
+            <p id="application-message" class="application-message"></p>
         </section>
     </div>
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
     <script src="scripts/script.js"></script>
 </body>
 </html>

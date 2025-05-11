@@ -173,3 +173,16 @@
 .job-description {
     font-weight: 500;
 }
+
+.swiper-slide {
+    text-align: center;
+    font-size: 18px;
+    background: rgb(250, 237, 242);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.swiper-slide-img {
+    object-fit: contain;
+    margin-right: 40px;
+}

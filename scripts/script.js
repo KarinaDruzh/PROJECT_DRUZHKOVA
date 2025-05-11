@@ -61,7 +61,34 @@ window.addEventListener("click", (event) => {
             modalApplication.setAttribute("hidden", true);
         }
     });
+const formApplication = document.querySelector("#formApplication");
+if (formApplication) {
+    formApplication.addEventListener("submit", (event) => {
+        event.preventDefault();
+        const username = formApplication.querySelector("#username").value;
+        const tel = formApplication.querySelector("#tel").value;
+        const email = formApplication.querySelector("#email").value;
 
+        const modalMessage = modalApplication.querySelector("#application-message");
+        if (username.length < 3) {
+            modalMessage.textContent = "Имя пользователя должно содержать не менее 3 символов";
+            modalMessage.style.color = "black";
+            return;
+        }
+        if (!/^\d{10,}$/.test(tel)) {
+            modalMessage.textContent = "Номер телефона должен содержать только цифры и быть не менее 10 символов";
+            modalMessage.style.color = "black";
+            return;
+        }
+        //отправка данных на сервер (можно добавить)
+        modalMessage.textContent = "Заявка отправлена!";
+        modalMessage.style.color = "green";
+        //записываем данные в localStorage
+        window.localStorage.setItem("username", username);
+        window.localStorage.setItem("tel", tel);
+        window.localStorage.setItem("email", email);
+        });
+}
     
 const headerMenu = document.querySelector('.header-menu');
 if (headerMenu){
@@ -141,7 +168,17 @@ if (cardCon) {
     .catch((error) => {
         console.error("Ошибка при загрузке данных:", error);
     });
-        
-    
-    
 }
+
+
+document.addEventListener('DOMContentLoaded', function() {
+    const sliders = document.querySelector('.swiper');
+    if (sliders) {
+        const swiper1 = new Swiper(sliders, {
+            navigation: {
+                nextEl: ".swiper-button-next",
+                prevEl: ".swiper-button-prev",
+            },
+        });
+    }
+});
